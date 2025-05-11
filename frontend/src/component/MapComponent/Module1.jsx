@@ -331,12 +331,12 @@ const Module1 = () => {
     />
 
     {/* Right Panel (BuildingManager & RouteManager) */}
-    <div className="flex flex-col gap-4 w-[280px] overflow-auto">
-      <BuildingManager map={map} clickedLocation={clickedLocation} />
-      <RouteManager map={map}/>
+      <div className="w-[280px] h-full bg-gray-100 p-4 space-y-4 overflow-y-auto overflow-x-hidden rounded-lg border border-gray-800">
+        <BuildingManager map={map} clickedLocation={clickedLocation} />
+        <RouteManager map={map}/>
+      </div>
     </div>
   </div>
-</div>
 
   );
   
